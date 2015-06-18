@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+recursive-include plugin_perfiles/static *
+recursive-include plugin_perfiles/templates *
+recursive-include plugin_perfiles/migrations *
+recursive-include docs *

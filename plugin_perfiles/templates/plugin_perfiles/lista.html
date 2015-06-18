@@ -1,0 +1,24 @@
+
+{% load thumbnail %}
+
+
+
+<ul class="small-block-grid-1 medium-block-grid-2 {{'large-block-grid-'|add:columnas}}">
+
+{% for x in lista %}
+
+	<li>
+    <article class="perfil">
+	<img class="img-responsive" src='{% thumbnail x.imagen size crop=',0' upscale %}' width="{{width}}" height="{{height}}" src="" alt="{{x.nombre}}" title="{{x.nombre}}">
+
+
+    <h1>{{x.nombre}}</h1>
+    <p>{{x.cargo}} </p>
+
+    </article>
+    </li>
+
+{% endfor %}
+
+</ul>
+

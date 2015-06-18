@@ -1,0 +1,19 @@
+
+{% load thumbnail %}
+
+
+
+
+<div class="row">
+<div class="large-12 columns">
+
+    <article class="perfil">
+	<img class="img-responsive" src='{% thumbnail perfil.imagen size crop=',0' upscale %}' width="{{width}}" height="{{height}}" src="" alt="{{perfil.nombre}}" title="{{perfil.nombre}}">
+
+    <h1>{{perfil.nombre}}</h1>
+    <p>{{perfil.cargo}} </p>
+
+    </article>
+</div>
+</div>
+
